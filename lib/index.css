@@ -3,25 +3,25 @@
  * Modal.
  *
  * .overlay.modal-overlay
+ * .modal-wrapper
  *   .modal
  *     .modal-close-button
  *     [user-provided]
  *
  */
 
-.modal-overlay {
+.modal-wrapper {
+  pointer-events: none; /* ignore pointer events, so overlay will work */
   position: fixed;
-  z-index: 500; /* same as component/overlay */
+  z-index: 501; /* above as component/overlay */
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   text-align: center;
-  background: rgba(0,0,0,.5);
-  background: radial-gradient(ellipse at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
 }
 
-.modal-overlay::before {
+.modal-wrapper::before {
   content: '';
   display: inline-block;
   height: 100%;
@@ -30,6 +30,7 @@
 }
 
 .modal {
+  pointer-events: auto; /* re-enable pointer events */
   display: inline-block;
   vertical-align: middle;
   text-align: left;

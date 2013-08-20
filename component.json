@@ -11,6 +11,7 @@
     "component/domify": "*",
     "component/emitter": "*",
     "component/event": "*",
+    "ianstormtaylor/overlay": "*",
     "segmentio/on-escape": "*",
     "yields/stop": "*"
   },

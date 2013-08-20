@@ -18,7 +18,8 @@ modal(el).show();
 ## API
 
 ```html
-<div class="overlay modal-overlay">
+<div class="overlay modal-overlay"></div>
+<div class="modal-wrapper">
   <div class="modal">
     <a class="modal-close-button"></a>
     { Your element gets injected here. }
@@ -26,7 +27,7 @@ modal(el).show();
 </div>
 ```
 
-The outer-most element has a class of `overlay`, so that it will inherit styles and themes from the [`component/overlay`](https://github.com/component/overlay) component.
+A [`component/overlay`](https://github.com/component/overlay) element is used to create the mask above the screen, so if you've already themed it you've got no more work to do.
 
 
 ### Modal(el)
