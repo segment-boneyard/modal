@@ -13,7 +13,7 @@ var modal = require('modal');
 modal(el).show();
 ```
 
-  To use it, pass in the `el` or `view` you want to "modal-ize". View's are assumed to have a `.el` property that is the view's element (not a jQuery-like object).
+  To use it, pass in the `el` you want to "modal-ize".
 
 ## API
 
@@ -21,7 +21,7 @@ modal(el).show();
 <div class="overlay modal-overlay">
   <div class="modal">
     <a class="modal-close-button"></a>
-    { Your view gets injected here. }
+    { Your element gets injected here. }
   </div>
 </div>
 ```
@@ -29,8 +29,8 @@ modal(el).show();
 The outer-most element has a class of `overlay`, so that it will inherit styles and themes from the [`component/overlay`](https://github.com/component/overlay) component.
 
 
-### Modal(el || view)
-  Create a new `Modal` instance with the given `el` or `view`.
+### Modal(el)
+  Create a new `Modal` instance with the given `el`.
 
 ### #show
   Show the modal, emitting `show`.
