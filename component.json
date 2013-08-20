@@ -1,0 +1,25 @@
+{
+  "name": "modal",
+  "repo": "segmentio/modal",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "A simple modal UI component.",
+  "keywords": ["modal", "ui", "overlay"],
+  "dependencies": {
+    "anthonyshort/after-transition": "0.0.2",
+    "component/classes": "*",
+    "component/domify": "*",
+    "component/emitter": "*",
+    "component/event": "*",
+    "component/type": "*",
+    "segmentio/on-escape": "*",
+    "yields/stop": "*"
+  },
+  "development": {
+    "component/assert": "*"
+  },
+  "scripts": ["lib/index.js"],
+  "styles": ["lib/index.css"],
+  "templates": ["lib/index.html"],
+  "main": "lib/index.js"
+}

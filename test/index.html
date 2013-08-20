@@ -1,0 +1,34 @@
+<html>
+<head>
+  <link rel="stylesheet" href="mocha.css" />
+  <link rel="stylesheet" href="../build/build.css" />
+  <style>
+    #mocha {
+      width: 750px;
+      height: 400px;
+    }
+
+    .modal {
+      box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+      background-color: white;
+      border-radius: 4px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="mocha"></div>
+  <script src="mocha.js"></script>
+  <script>mocha.setup({ui: 'bdd'})</script>
+  <script src="../build/build.js"></script>
+  <script src="tests.js"></script>
+  <script>mocha.run();</script>
+  <script>
+    (function () {
+      var modal = require('modal');
+      var div = document.getElementById('mocha');
+      modal(div).show();
+    }());
+  </script>
+</body>
+</html>

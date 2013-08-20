@@ -1,0 +1,36 @@
+
+/**
+ * Modal.
+ *
+ * .overlay.modal-overlay
+ *   .modal
+ *     .modal-close-button
+ *     [user-provided]
+ *
+ */
+
+.modal-overlay {
+  position: fixed;
+  z-index: 500; /* same as component/overlay */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background: rgba(0,0,0,.5);
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%);
+}
+
+.modal-overlay::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -.28em; /* remove white space next to inline-block element */
+}
+
+.modal {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
