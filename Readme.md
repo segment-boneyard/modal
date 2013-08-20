@@ -42,10 +42,10 @@ The outer-most element has a class of `overlay`, so that it will inherit styles 
   Remove the modal from the DOM.
 
 ### #addClass(name)
-  Add a class `name` to the modal's element.
+  Add a class `name` to the `.modal` and `.modal-overlay`.
 
 ### #removeClass(name)
-  Remove a class `name` from the modal's element.
+  Remove a class `name` from the `.modal` and `.modal-overlay`.
 
 ## License
 
