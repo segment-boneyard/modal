@@ -1,4 +1,3 @@
-
 # modal
 
   A simple modal UI component.
@@ -9,14 +8,12 @@
 
 ## Example
 
-  To use it, pass in the `el` or `view` you want to "modal-ize":
-
 ```js
 var modal = require('modal');
 modal(el).show();
 ```
 
-  View's are assumed to have a `.el` property that is the view's element (not a jQuery-like object).
+  To use it, pass in the `el` or `view` you want to "modal-ize". View's are assumed to have a `.el` property that is the view's element (not a jQuery-like object).
 
 ## API
 
