@@ -4,7 +4,7 @@
 
 ## Installation
 
-    $ component install ianstormtaylor/modal
+    $ component install segmentio/modal
 
 ## Example
 
