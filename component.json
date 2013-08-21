@@ -2,7 +2,7 @@
   "name": "modal",
   "repo": "segmentio/modal",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple modal UI component.",
   "keywords": ["modal", "ui", "overlay"],
   "dependencies": {
