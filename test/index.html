@@ -13,6 +13,15 @@
       background-color: white;
       border-radius: 4px;
       overflow: auto;
+      -webkit-transition: all .3s;
+    }
+
+    .modal.hidden {
+      opacity: 0;
+    }
+
+    .modal-overlay {
+      background: radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%);
     }
   </style>
 </head>
@@ -26,8 +35,12 @@
   <script>
     (function () {
       var modal = require('modal');
+      var enter = require('on-enter');
       var div = document.getElementById('mocha');
-      modal(div).show();
+      var view = modal(div).closeable().show();
+      enter(function (e) {
+        view.show();
+      });
     }());
   </script>
 </body>

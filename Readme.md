@@ -27,20 +27,20 @@ modal(el).show();
 </div>
 ```
 
-A [`component/overlay`](https://github.com/component/overlay) element is used to create the mask above the screen, so if you've already themed it you've got no more work to do.
+A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `.overlay` class) is used to create the mask above the screen, so if you've already themed it you've got no more work to do.
 
 
 ### Modal(el)
   Create a new `Modal` instance with the given `el`.
 
-### #show
-  Show the modal, emitting `show`.
+### #show(fn)
+  Show the modal, emitting `show`, optionally calling `fn`.
 
-### #hide
-  Hide the modal, emitting `hide`.
+### #hide(fn)
+  Hide the modal, emitting `hide`, optionally calling `fn`.
 
-### #remove
-  Remove the modal from the DOM.
+### #remove(fn)
+  Remove the modal from the DOM, optionally calling `fn`.
 
 ### #addClass(name)
   Add a class `name` to the `.modal` and `.modal-overlay`.

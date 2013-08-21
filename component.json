@@ -11,12 +11,12 @@
     "component/domify": "*",
     "component/emitter": "*",
     "component/event": "*",
-    "ianstormtaylor/overlay": "*",
-    "segmentio/on-escape": "*",
+    "segmentio/overlay": "*",
     "yields/stop": "*"
   },
   "development": {
-    "component/assert": "*"
+    "component/assert": "*",
+    "segmentio/on-enter": "*"
   },
   "scripts": ["lib/index.js"],
   "styles": ["lib/index.css"],
