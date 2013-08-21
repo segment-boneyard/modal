@@ -10,7 +10,7 @@
 
 ```js
 var modal = require('modal');
-modal(el).closeable().show();
+modal(el).show();
 ```
 
   To use it, pass in the `el` you want to "modal-ize".
@@ -41,6 +41,12 @@ A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `
 
 ### #remove(fn)
   Remove the modal from the DOM, optionally calling `fn`.
+
+### #closeable()
+  Make the modal closeable.
+
+### #temporary()
+  Make the modal one-time-use, so that it removes itself on hiding.
 
 ### #addClass(name)
   Add a class `name` to the `.modal` and `.modal-overlay`.
