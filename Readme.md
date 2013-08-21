@@ -10,7 +10,7 @@
 
 ```js
 var modal = require('modal');
-modal(el).show();
+modal(el).closeable().show();
 ```
 
   To use it, pass in the `el` you want to "modal-ize".
