@@ -11,8 +11,7 @@
     "component/domify": "*",
     "component/emitter": "*",
     "component/event": "*",
-    "segmentio/overlay": "*",
-    "yields/stop": "*"
+    "segmentio/overlay": "*"
   },
   "development": {
     "component/assert": "*",

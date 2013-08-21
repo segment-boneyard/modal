@@ -37,7 +37,7 @@
       var modal = require('modal');
       var enter = require('on-enter');
       var div = document.getElementById('mocha');
-      var view = modal(div).closeable().show();
+      var view = modal(div).closeable().temporary().show();
       enter(function (e) {
         view.show();
       });
