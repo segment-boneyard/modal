@@ -2,17 +2,17 @@
   "name": "modal",
   "repo": "segmentio/modal",
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple modal UI component.",
   "keywords": ["modal", "ui", "overlay"],
   "dependencies": {
-    "anthonyshort/after-transition": "0.0.2",
     "component/classes": "*",
     "component/domify": "*",
     "component/emitter": "*",
     "component/event": "*",
     "ianstormtaylor/redraw": "*",
-    "segmentio/overlay": "*"
+    "segmentio/overlay": "*",
+    "yields/after-transition": "*"
   },
   "development": {
     "component/assert": "*",
