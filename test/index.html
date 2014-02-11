@@ -8,19 +8,18 @@
       height: 400px;
     }
 
-    .modal {
+    .Modal {
       box-shadow: 2px 2px 5px rgba(0,0,0,.4);
       background-color: white;
       border-radius: 4px;
       overflow: auto;
-      -webkit-transition: all .3s;
     }
 
-    .modal.hidden {
+    .Modal.hide {
       opacity: 0;
     }
 
-    .modal-overlay {
+    .overlay {
       background: radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.55) 100%);
     }
   </style>
@@ -37,7 +36,10 @@
       var modal = require('modal');
       var enter = require('on-enter');
       var div = document.getElementById('mocha');
-      var view = modal(div).closeable().temporary().show();
+      var view = modal(div)
+        .overlay()
+        .effect('fade-and-scale')
+        .show();
       enter(function (e) {
         view.show();
       });

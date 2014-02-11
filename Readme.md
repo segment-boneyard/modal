@@ -18,16 +18,12 @@ modal(el).show();
 ## API
 
 ```html
-<div class="overlay modal-overlay"></div>
-<div class="modal-wrapper">
-  <div class="modal">
-    <a class="modal-close-button"></a>
-    { Your element gets injected here. }
-  </div>
+<div class="Modal">
+  { Your element gets injected here. }
 </div>
 ```
 
-A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `.overlay` class) is used to create the mask above the screen, so if you've already themed it you've got no more work to do.
+A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `.Overlay` class) is used to create the mask above the screen, so if you've already themed it you've got no more work to do.
 
 
 ### Modal(el)
@@ -39,20 +35,20 @@ A [`segmentio/overlay`](https://github.com/segmentio/overlay) element (with an `
 ### #hide(fn)
   Hide the modal, emitting `hide`, optionally calling `fn`.
 
-### #remove(fn)
-  Remove the modal from the DOM, optionally calling `fn`.
-
-### #closeable()
+### #closeable() or #closable()
   Make the modal closeable.
 
-### #temporary()
-  Make the modal one-time-use, so that it removes itself on hiding.
+### #overlay()
+  Shows an overlay with the modal.
+
+### #effect(name)
+  See the effect name. Comes bundled with `toggle`, `slide-in-bottom`, `sticky-up` and `fade-and-scale`.
 
 ### #addClass(name)
-  Add a class `name` to the `.modal` and `.modal-overlay`.
+  Add a class `name` to the `.Modal`
 
 ### #removeClass(name)
-  Remove a class `name` from the `.modal` and `.modal-overlay`.
+  Remove a class `name` from the `.Modal`.
 
 ## License
 

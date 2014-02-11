@@ -1,37 +1,82 @@
+.Modal {
+  position: fixed;
+  opacity: 1;
+  z-index: 1001;
+  max-width: 500px;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
 
 /**
- * Modal.
- *
- * .overlay.modal-overlay
- * .modal-wrapper
- *   .modal
- *     .modal-close-button
- *     [user-provided]
- *
+ * Default show/hide effect
  */
 
-.modal-wrapper {
-  pointer-events: none; /* ignore pointer events, so overlay will work */
-  position: fixed;
-  z-index: 501; /* above as component/overlay */
+.Modal[effect="toggle"].hidden {
+  display: none;
+}
+
+
+/**
+ * Slide in from the bottom
+ */
+
+.Modal[effect="slide-in-bottom"] {
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(0);
+  -moz-transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
+  transition: all .4s cubic-bezier(0.560, 0.185, 0.315, 1.150);
+}
+
+.Modal[effect="slide-in-bottom"].hidden {
+  -webkit-transform: translateX(-50%) translateY(30%);
+  -moz-transform: translateX(-50%) translateY(30%);
+  transform: translateX(-50%) translateY(30%);
+  opacity: 0;
+}
+
+
+/**
+ * Sticky-up
+ */
+
+.Modal[effect="sticky-up"] {
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(0);
+  -moz-transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0);
+  transition: all .4s ease-in-out;
 }
 
-.modal-wrapper::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -.28em; /* remove white space next to inline-block element */
+.Modal[effect="sticky-up"].hidden {
+  -webkit-transform: translateX(-50%) translateY(-100%);
+  -moz-transform: translateX(-50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-100%);
 }
 
-.modal {
-  pointer-events: auto; /* re-enable pointer events */
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
+
+/**
+ * Fade in and scale up from the middle
+ */
+
+.Modal[effect="fade-and-scale"] {
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(0) scale(1);
+  -moz-transform: translateX(-50%) translateY(0) scale(1);
+  transform: translateX(-50%) translateY(0) scale(1);
+  transition: all .4s cubic-bezier(0.560, 0.185, 0.315, 1.150);
+}
+
+.Modal[effect="fade-and-scale"].hidden {
+  -webkit-transform: translateX(-50%) translateY(0%) scale(0.5);
+  -moz-transform: translateX(-50%) translateY(0%) scale(0.5);
+  transform: translateX(-50%) translateY(0%) scale(0.5);
+  opacity: 0;
 }
