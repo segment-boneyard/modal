@@ -15,7 +15,7 @@
  * Default show/hide effect
  */
 
-.Modal[data-effect="toggle"].hide {
+.Modal[effect="toggle"].hidden {
   display: none;
 }
 
@@ -24,7 +24,7 @@
  * Slide in from the bottom
  */
 
-.Modal[data-effect="slide-in-bottom"] {
+.Modal[effect="slide-in-bottom"] {
   top: 30%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(0);
@@ -33,7 +33,7 @@
   transition: all .4s cubic-bezier(0.560, 0.185, 0.315, 1.150);
 }
 
-.Modal[data-effect="slide-in-bottom"].hide {
+.Modal[effect="slide-in-bottom"].hidden {
   -webkit-transform: translateX(-50%) translateY(30%);
   -moz-transform: translateX(-50%) translateY(30%);
   transform: translateX(-50%) translateY(30%);
@@ -45,7 +45,7 @@
  * Sticky-up
  */
 
-.Modal[data-effect="sticky-up"] {
+.Modal[effect="sticky-up"] {
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(0);
@@ -54,7 +54,7 @@
   transition: all .4s ease-in-out;
 }
 
-.Modal[data-effect="sticky-up"].hide {
+.Modal[effect="sticky-up"].hidden {
   -webkit-transform: translateX(-50%) translateY(-100%);
   -moz-transform: translateX(-50%) translateY(-100%);
   transform: translateX(-50%) translateY(-100%);
@@ -65,7 +65,7 @@
  * Fade in and scale up from the middle
  */
 
-.Modal[data-effect="fade-and-scale"] {
+.Modal[effect="fade-and-scale"] {
   top: 30%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(0) scale(1);
@@ -74,7 +74,7 @@
   transition: all .4s cubic-bezier(0.560, 0.185, 0.315, 1.150);
 }
 
-.Modal[data-effect="fade-and-scale"].hide {
+.Modal[effect="fade-and-scale"].hidden {
   -webkit-transform: translateX(-50%) translateY(0%) scale(0.5);
   -moz-transform: translateX(-50%) translateY(0%) scale(0.5);
   transform: translateX(-50%) translateY(0%) scale(0.5);
