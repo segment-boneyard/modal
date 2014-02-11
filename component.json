@@ -11,7 +11,7 @@
     "component/emitter": "*",
     "component/event": "*",
     "ianstormtaylor/redraw": "*",
-    "segmentio/overlay": "*",
+    "segmentio/overlay": "0.1.0",
     "yields/after-transition": "*"
   },
   "development": {
