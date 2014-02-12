@@ -12,6 +12,15 @@
 
 
 /**
+ * So transitions actually work
+ */
+
+.Modal.hidden {
+  display: block;
+}
+
+
+/**
  * Default show/hide effect
  */
 
