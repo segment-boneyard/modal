@@ -8,7 +8,7 @@
   "dependencies": {
     "component/domify": "*",
     "component/emitter": "*",
-    "segmentio/overlay": "0.2.2",
+    "segmentio/overlay": "0.2.3",
     "segmentio/showable": "0.1.1",
     "segmentio/on-escape": "*",
     "ianstormtaylor/classes": "0.1.0"
