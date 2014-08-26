@@ -1,5 +1,5 @@
 
-0.3.1 - August 26, 2014
+0.3.5 - August 26, 2014
 -----------------------
 
 * add duo support, update to duo version of overlay
